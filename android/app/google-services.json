@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "520080468914",
+    "project_id": "testapp-96bf8",
+    "storage_bucket": "testapp-96bf8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520080468914:android:a1b2b057456ca8b9d312ab",
+        "android_client_info": {
+          "package_name": "com.example.egovernancetest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCCEdZBltkYVVBK7VmEiZdFaHKI9NYaCw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
