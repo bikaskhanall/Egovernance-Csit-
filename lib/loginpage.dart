@@ -54,7 +54,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(backgroundColor: Colors.redAccent,
-        title: Text('E-governance'),
+        title: const Text('E-governance'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -64,16 +64,16 @@ class _LoginPageState extends State<LoginPage> {
                 Image.asset("images/gvvt.jpg"),
               TextField(
                 controller: _emailController,
-                decoration: InputDecoration(labelText: 'Email'),
+                decoration: const InputDecoration(labelText: 'Email'),
               ),
               TextField(
                 controller: _passwordController,
-                decoration: InputDecoration(labelText: 'Password'),
+                decoration: const InputDecoration(labelText: 'Password'),
                 obscureText: true,
               ),
               ElevatedButton(
                 onPressed: _signInWithEmailAndPassword,
-                child: Text('Sign in with Email'),
+                child: const Text('Sign in with Email'),
               ),
               ElevatedButton(
                 onPressed: () async {
@@ -85,11 +85,11 @@ class _LoginPageState extends State<LoginPage> {
                     );
                   } else {
                     ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text('Sign in failed')),
+                      const SnackBar(content: Text('Sign in failed')),
                     );
                   }
                 },
-                child: Text('Sign in with Google'),
+                child: const Text('Sign in with Google'),
               ),
               TextButton(
                 onPressed: () {
@@ -98,7 +98,7 @@ class _LoginPageState extends State<LoginPage> {
                     MaterialPageRoute(builder: (context) => SignUpPage()),
                   );
                 },
-                child: Text('Don\'t have an account? Sign up'),
+                child: const Text('Don\'t have an account? Sign up'),
               ),
             ],
           ),

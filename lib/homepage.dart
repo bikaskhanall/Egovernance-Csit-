@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
              TextButton(onPressed: (){
                Navigator.push(context, MaterialPageRoute(builder: (context) => myhomeclass(),));
               
-             }, child:  Text("Register Birth"),style: TextButton.styleFrom(backgroundColor: Colors.redAccent,)),
+             },style: TextButton.styleFrom(backgroundColor: Colors.redAccent,), child:  const Text("Register Birth")),
          
            
            ],
@@ -46,7 +46,7 @@ class HomePage extends StatelessWidget {
          Row(mainAxisAlignment: MainAxisAlignment.center,
             children: [TextButton(onPressed: (){   
               Navigator.push(context, MaterialPageRoute(builder: (context) => const Nid(),)); 
-             }, child: Text("Marriage"),style: TextButton.styleFrom(backgroundColor: Colors.redAccent,)),
+             },style: TextButton.styleFrom(backgroundColor: Colors.redAccent,), child: Text("Marriage")),
             
            ],),
            const SizedBox(height: 30,),
@@ -54,7 +54,7 @@ class HomePage extends StatelessWidget {
           children: [
             TextButton(onPressed: (){   
               Navigator.push(context, MaterialPageRoute(builder: (context) => myhomeclassdeath(),));
-             }, child: Text("Register Death"),style: TextButton.styleFrom(backgroundColor: Colors.redAccent,)),
+             },style: TextButton.styleFrom(backgroundColor: Colors.redAccent,), child: Text("Register Death")),
            
          ],),const SizedBox(height: 20,),
           

@@ -1,16 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-class myhomeclassdeath extends StatefulWidget {
+class myhomeclassdeath extends StatelessWidget {
    myhomeclassdeath({super.key});
 
-  @override
-  State<myhomeclassdeath> createState() => _myhomeclassdeathState();
-}
-
-class _myhomeclassdeathState extends State<myhomeclassdeath> {
   final nameController = TextEditingController();
+
   final dateController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

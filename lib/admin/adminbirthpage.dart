@@ -1,18 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-class birthdetails extends StatefulWidget {
+class birthdetails extends StatelessWidget {
   const birthdetails({super.key});
 
   @override
-  State<birthdetails> createState() => _birthdetailsState();
-}
-
-class _birthdetailsState extends State<birthdetails> {
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Birth Details"),
+      appBar: AppBar(title: const Text("Birth Details"),
         backgroundColor: Colors.redAccent,),
       body: Column(children: [
            

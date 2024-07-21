@@ -12,7 +12,7 @@ class _AdmindeathState extends State<Admindeath> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Death details"),
+      appBar: AppBar(title: const Text("Death details"),
         backgroundColor: Colors.redAccent,),
       body: Column(children: [
         
@@ -34,9 +34,9 @@ class _AdmindeathState extends State<Admindeath> {
               final clientWidget = Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(client['name'],style: TextStyle(fontSize: 30),),
-                  SizedBox(width: 20,),
-                  Text(client['date'],style: TextStyle(fontSize: 30),),
+                  Text(client['name'],style: const TextStyle(fontSize: 30),),
+                  const SizedBox(width: 20,),
+                  Text(client['date'],style: const TextStyle(fontSize: 30),),
                 ],
               );
               clientWidgets.add(clientWidget);
